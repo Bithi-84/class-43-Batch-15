@@ -1,0 +1,30 @@
+
+
+============ C0nfigure Dtabase =============
+
+
+mysqli('hostname','user_name','password','database_name');
+
+
+
+function testName(){
+
+    $x = 10;
+    $y = 20;
+
+    $result = $x + $y;
+}
+
+SELECT * FROM students;
+
+mysqli_query($connection,$query)
+
+si = 0;
+
+while(condition){
+    statement....
+    increment/decrement
+}
+
+
+let associativeArray = {'name'=>:'rahim',roll}
