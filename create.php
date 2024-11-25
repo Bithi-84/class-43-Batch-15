@@ -6,14 +6,14 @@
 
    <?php
 
-      if(isset($_post['submit'])){
+      if(isset($_POST['submit'])){
         
-    $name    = $_post['name'];
-    $email   = $_post['email'];
-    $phone   = $_post['phone'];
-    $class   = $_post['class'];
-    $roll    = $_post['roll'];
-    $address = $_post['address'];
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $phone   = $_POST['phone'];
+    $class   = $_POST['class'];
+    $roll    = $_POST['roll'];
+    $address = $_POST['address'];
 
  $query = "INSERT INTO students (name, roll, class, phone, address, email) VALUES ('$name', '$roll','$class','$phone','$address','$email')";
 
@@ -23,7 +23,7 @@
         header('location:index.php');
 
        }     
-          else 'Falied to insert data';
+          else echo 'Falied to insert data';
 
       }
 
@@ -63,7 +63,7 @@
       </nav>
       
       <div class="container">
-      <form action="" method="$post">
+      <form action="" method="post">
   <div class="mb-3">
     <label for="name" class="form-label">Name*</label>
     <input type="text" class="form-control" placeholder="Enter Student Name" name="name" id="name" value="" required>
@@ -91,7 +91,7 @@
 
   <div class="mb-3">
     <label for="address" class="form-label">Roll*</label>
-    <input type="text" class="form-control" placeholder="Enter Your Name" name="roll" id="roll" valu="" required>
+    <input type="text" class="form-control" placeholder="Enter Your Name" name="roll" id="roll" value="" required>
 
   </div>
 
