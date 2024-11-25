@@ -23,8 +23,10 @@
         header('location:index.php');
 
        }     
-          else echo 'Falied to insert data';
+          else{
+            echo 'Falied to insert data';
 
+          }
       }
 
    
